@@ -10,9 +10,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60vw;
+	min-width: 650px;
 	font-family: georgia;
 	padding: 0 5vmax 3vmax;
-	overflow-x: hidden;
+	/* overflow-x: hidden;*/
 }
 
 /* Generic body css */
