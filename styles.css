@@ -143,6 +143,12 @@ li {
 	background-color: lightgray;
 }
 
+.publication_entry_alt {
+	display: inline-block;
+	padding: 1vw 1vw;
+	background-color: darkgray;
+}
+
 /* All internship css */
 
 .internships {
