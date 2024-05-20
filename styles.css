@@ -10,8 +10,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60vw;
-	min-width: 650px;
-	font-family: georgia;
+	min-width: 750px;
+	font-family: helvetica;
 	padding: 0 5vmax 3vmax;
 	/* overflow-x: hidden;*/
 }
@@ -34,11 +34,11 @@ a:hover, a:active {
 }
 
 h1 {
-	font-size: 25px;
+	font-size: 28px;
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 25px;
 	color: rgb(100,0,12.5);
 }
 
@@ -60,7 +60,7 @@ li {
 	width: 42%;
 	color: rgb(100,0,12.5);
 	margin-bottom: 2pt;
-	font-size: 28px;
+	font-size: 35px;
 	text-align: left;
 }
 
@@ -117,18 +117,20 @@ li {
 }
 
 .publications h3{
-	margin: 2pt 0;
+	margin: 1pt 2pt;
 	font-size: 18px;
+	line-height: 130%;
 }
 
 .publications h4{
-	margin: 2pt 0;
+	margin: 1pt 2pt;
 	color: black;
-	font-size: 14px;
+	font-size: 16px;
 	color: rgb(100,0,12.5);
 }
 
 .publications a, .publications a:visited {
+	margin: 1pt 2pt;
 	color: black;
 	font-size: 16px;
 }
@@ -139,14 +141,7 @@ li {
 
 .publication_entry {
 	display: inline-block;
-	padding: 1vw 1vw;
-	background-color: lightgray;
-}
-
-.publication_entry_alt {
-	display: inline-block;
-	padding: 1vw 1vw;
-	background-color: darkgray;
+	padding: 0.5vw 1vw;
 }
 
 /* All internship css */
