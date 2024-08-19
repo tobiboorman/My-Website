@@ -1,3 +1,5 @@
+/* Original scheme: rgb(100,0,12.5) */
+
 html
 {
     width: 100%;
@@ -9,28 +11,52 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60vw;
+	width: 1000px;
 	min-width: 750px;
-	font-family: helvetica;
+	font-family: Arial;
 	padding: 0 5vmax 3vmax;
 	/* overflow-x: hidden;*/
+}
+
+/* Primary/ Secondary page division */
+
+.homepage {
+	height: 1250px;
+}
+
+.primary {
+	float: right;
+	width: 720px;
+}
+
+.secondary {
+	position: sticky;
+	top: 100px;
+	float: left;
+	width: 200px;
+}
+
+.secondary ul{
+	margin: 0; 
+	padding: 0;
+	list-style-type: none;
 }
 
 /* Generic body css */
 
 p {
-	line-height: 180%;
-	margin: 15px 0;
-	font-size: 18px;
+	line-height: 150%;
+	margin: 1px 0;
+	font-size: 16px;
 }
 
 a, a:visited {
-	color: gray;
-	font-size: 18px;
+	color: black;
+	font-size: 16px;
 }
 
 a:hover, a:active {
-	color: rgb(100,0,12.5);
+	color: rgb(100, 0, 12.5);
 }
 
 h1 {
@@ -38,8 +64,8 @@ h1 {
 }
 
 h2 {
-	font-size: 25px;
-	color: rgb(100,0,12.5);
+	font-size: 26.5px;
+	color: rgb(50, 50, 50);
 }
 
 li {
@@ -51,14 +77,17 @@ li {
 /* All .menu css */
 
 .menu {
-	padding: 0 5%;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	padding: 0 0%;
 	width: 100%;
 }
 
 .menu h1{
 	display: inline-block;
 	width: 42%;
-	color: rgb(100,0,12.5);
+	color: rgb(50, 50, 50);
 	margin-bottom: 2pt;
 	font-size: 35px;
 	text-align: left;
@@ -67,7 +96,7 @@ li {
 .menu ul {
 	display: inline-block;
 	list-style: none;
-	width: 45%;
+	width: 50%;
 	margin-bottom: 2pt;
 	text-align: right;
 }
@@ -89,59 +118,79 @@ li {
 }
 
 .menu a:hover, .menu a:active {
-	color: rgb(100,0,12.5);
+	color: rgb(100, 0, 12.5);
+}
+
+/* All footer css */
+
+.footer {
+	position: relative;
+	background-color: white;
+	padding: 0 2%;
+	width: 100%;
+	height: 35px;
 }
 
 
-/* All .welcome css */
+/* All .about css */
 
-.welcome {
-	text-align: left;
-	padding: 0 5%;
-}
-
-.welcome img{
+.about {
 	display: block;
-	margin: 20px auto;
+	text-align: left;
 }
 
-.welcome h1{
-	color: rgb(100,0,12.5);
+.about p{
+		margin: 5px 0;
+}
+
+.about h1{
+	color: rgb(50, 50, 50);
+}
+
+.about h2{
+	margin: 20px 0 0 0;
 }
 
 /* All publication css */
 
 .publications {
+	display: block;
 	text-align: left;
-	padding: 0 5%;
+}
+
+.publications h2{
+	margin: 20px 0 0 0;
 }
 
 .publications h3{
-	margin: 1pt 2pt;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 130%;
+	margin: 15px 0 0 0;
 }
 
 .publications h4{
-	margin: 1pt 2pt;
 	color: black;
-	font-size: 16px;
+	font-size: 14px;
 	color: rgb(100,0,12.5);
+	margin: 4pt 0 3pt 0;
 }
 
 .publications a, .publications a:visited {
-	margin: 1pt 2pt;
 	color: black;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .publications a:hover, a:active {
-	color: rgb(100,0,12.5);
+	color: rgb(100, 0, 12.5);
 }
 
 .publication_entry {
 	display: inline-block;
-	padding: 0.5vw 1vw;
+}
+
+.publications p {
+	font-size: 14px;
+	margin: 5pt 0;
 }
 
 /* All internship css */
@@ -168,7 +217,7 @@ footer {
 }
 
 .blogpost h1 {
-	color: rgb(100,0,12.5);
+	color: rgb(50, 50, 50);
 }
 
 .blogpost h2 {
@@ -198,7 +247,7 @@ footer {
 }
 
 .blogpostcontent h1 {
-	color: rgb(100,0,12.5);
+	color: rgb(50, 50, 50);
 
 }
 

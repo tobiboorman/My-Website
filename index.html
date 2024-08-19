@@ -7,69 +7,91 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Appears on page tab -->
 		<title> Tobias Boorman </title>
+		<link rel="icon" type="image/png" href="assets/Favicon.png"/>
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/17284253b2.js" crossorigin="anonymous"></script>
 		<!-- CSS stylesheet --> 
 		<link href="styles.css" rel="stylesheet" />
-		<link rel="icon" type="image/png" href="assets/Favicon.png"/>
 	</head>
 	<body>
 		<!-- A menu bar to go at the top of the page -->
 		<nav class="menu">
-			<h1> Tobias Boorman </h1>
+			<h1> Dr Tobias Boorman </h1>
 			<ul>
-				<li><a href="assets/CV.pdf" download>CV</a></li>
-				<li><a href="Outreach.html"> Outreach </a></li>
-				<li><a href="fun.html"> Fun </a></li>
-				<li><a href="index.html"> Home </a></li>
+				<li><i class="fa-regular fa-lightbulb"></i> More to come soon...</li>
 			</ul>
+			<hr>
 		</nav>
-		<hr>
+		
 		<!-- The main bulk of text -->
-		<section class="welcome">
-			<img src="assets/MyMugCircle.png" alt="A lovely picture of my face" style="width: 10%; min-width: 140px; padding: 30px 0;">
-			<h2> About Me </h2>
-			<p> Welcome to my Website! I am a final year PhD student in Theoretical Condensed Matter Physics
-			at the University of St Andrews, working under the supervision of <a href="https://www.st-andrews.ac.uk/~bhb/">Dr Bernd Braunecker</a>. 
-			My research concerns open system dynamics in strongly correlated quantum materials. To be specific, I am interested in examining the underlying mechanisms that drive memory effects between a quantum system and its environment, their resulting dynamical signatures, and the modulation of the latter subject to interactions within the environment.
-			</p>
+		
+		<div class="homepage">
 			
-			<p>
-			My long-term aim with this website is for it to act as a catalogue of personal and professional projects, as well as to gain some experience in building one from scratch. 
-			</p>
+			<div class="primary">
+				
+				<section class="about">
+					<h2> About Me </h2>
+					<p> 
+					Having completed my PhD in Theoretical Physics at the <a href="https://www.st-andrews.ac.uk/physics-astronomy/">University of St Andrews</a>, I am now a software engineer at <a href="https://www.attocore.com/">AttoCore</a>.
+					</p>
+					
+					<p>
+					During my doctorate I had the pleasure of working under the supervision of <a href="https://www.st-andrews.ac.uk/~bhb/">Dr Bernd Braunecker</a>. 
+					My <a href="https://doi.org/10.17630/sta/1036">research</a> focussed on non-Markovian open system dynamics in correlated quantum materials. 
+					This work proved to be theoretically rich, involving ventures into topics such as finite temperature quantum field theory, Luttinger liquid theory, and quantum thermodynamics.
+					</p>
+					
+					<p>
+					Prior to this, I received a 1<sup>st</sup> class MSci (Hons) in Theoretical Physics with Mathematics from Lancaster University. 
+					My project, carried out under the supervision of <a href="https://www.lancaster.ac.uk/physics/about-us/people/alessandro-romito">Dr Alessandro Romito</a> and <a href="https://www.lancaster.ac.uk/physics/about-us/people/henning-schomerus">Prof. Henning Schomerus</a> 
+					in collaboration with <a href="https://szyniszewski.net/">Dr Marcin Szyniszewski</a>, focussed on many-body localisation transitions in disordered quantum systems 
+					and won the Research Academy Prize <q>awarded in recognition of an outstanding research project</q>.
+					</p>
+				</section>
+				
+				<section class="publications">
+					<h2> Scientific Publications </h2>
+						<article class="publication_entry">
+							<h3>Exact results, transient generalized Gibbs ensembles, and analytic approximations for spacetime propagators of massive, real scalar fields in one spatial dimension (2024)</h3>
+							<h4>T. Boorman and B. Braunecker</h4>
+							<a href="https://arxiv.org/abs/2405.19002">[arXiv:2405.19002]</a>
+							<p> 
+							The massive, real scalar field described by the Klein-Gordon equation in one spatial dimension is the most elementary example of a bosonic quantum field theory, and has been investigated for many decades either as a simple academic theory or as a realistic emergent many-body theory in low-dimensional systems. Despite this, the space and time behavior of its propagators have rarely been in the foreground, and although exact results are known, there remain gaps in the description and a lack of an in-depth physical analysis. The aim of this paper is to address the deficits by providing a comprehensive discussion of the results, and to show that this old theory still allows for several new results and insights. To start, known results are rederived in full detail, with an added discussion on how exactly space and time variables need to be extended to complex values to ensure analyticity throughout spacetime. This procedure shows also how singularities on the lightcone need to be regularized to remain compatible with the analyticity and the physical limit of a vanishing mass. An extension to nonzero temperatures is provided by considering the contact of the field to a nonrelativistic thermal reservoir, such as is necessary for emerging field theories in condensed matter systems. Subsequently, it is shown that the transient, short spacetime propagation can be understood in the context of the modern development of a generalized Gibbs ensemble, which describes a massless theory with an effective temperature that is set by the Klein-Gordon mass and the physical temperature. Finally, an approximation scheme is presented that captures the non-trivial mass dependence of the propagators throughout all spacetime but involves only elementary functions.
+							</p>
+						</article>
+						<article class="publication_entry">
+							<h3>Diagnostics of entanglement dynamics in noisy and disordered spin chains via the measurement-induced steady-state entanglement transition (2022)</h3>
+							<h4>T. Boorman, M. Szyniszewski, H. Schomerus, and A. Romito</h4>
+							<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.105.144202">[PhysRevB.105.144202]</a>
+							<a href="https://arxiv.org/abs/2107.11354">[arXiv:2107.11354]</a>
+							<p>
+							We utilize the concept of a measurement-induced entanglement transition to analyze the interplay and competition of processes that generate and destroy entanglement in a one-dimensional quantum spin chain evolving under a locally noisy and disordered Hamiltonian. We employ continuous measurements of variable strength to induce a transition from volume to area-law scaling of the steady-state entanglement entropy. While static background disorder systematically reduces the critical measurement strength, this critical value depends nonmonotonically on the strength of nonstatic noise. According to the extracted finite-size scaling exponents, the universality class of the transition is independent of the noise and disorder strength. We interpret the results in terms of the effect of static and nonstatic disorder on the intricate dynamics of the entanglement generation rate due to the Hamiltonian in the absence of measurement, which is fully reflected in the behavior of the critical measurement strength. Our results establish a firm connection between this entanglement growth and the steady-state behavior of the measurement-controlled systems, which therefore can serve as a tool to quantify and investigate features of transient entanglement dynamics in complex many-body systems via a steady-state phase transition.
+							</p>
+						</article>
+				</section>
+			</div>
 			
-			<p>
-			I received a 1<sup>st</sup> class MSci (Hons) in Theoretical Physics with Mathematics from Lancaster University in June 2020. My project, titled <q>Many-Body Localisation Transitions in Disordered Quantum Systems Subject to Continuous Monitoring</q>, which was carried out under the supervision of Dr Alessandro Romito and Professor Henning Schomerus in collaboration with Dr Marcin Szyniszewski, won the Research Academy Prize <q>awarded in recognition of an outstanding research project in the graduating class of 2020</q>.
-			</p>
-
-		</section>
-		<!-- Publication section -->
-		<section class="publications">
-			<h2> Publications </h2>
-			<article class="publication_entry">
-				<h3>Exact results, transient generalized Gibbs ensembles, and analytic approximations for spacetime propagators of massive, real scalar fields in one spatial dimension (2024)</h3>
-				<h4>T. Boorman and B. Braunecker</h4>
-				<a href="https://arxiv.org/abs/2405.19002">[arXiv:2405.19002]</a>
-			</article>
-			<article class="publication_entry">
-				<h3>Diagnostics of entanglement dynamics in noisy and disordered spin chains via the measurement-induced steady-state entanglement transition (2022)</h3>
-				<h4>T. Boorman, M. Szyniszewski, H. Schomerus, and A. Romito </h4>
-				<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.105.144202">[PhysRevB.105.144202]</a>
-				<a href="https://arxiv.org/abs/2107.11354">[arXiv:2107.11354]</a>
-			</article>
-		</section>
-		<br>
-		<section class="internships">
-			<h2> Internship Experience </h2>
-			<p>I have internship experience, undertaken both prior to and during my undergraduate studies, working for high-tech companies in the field of printable electronic sensors and devices. My responsibilities were broad, from the fabrication and testing of devices to interactions with potential customers and suppliers. Please visit my <a href="https://www.linkedin.com/in/tobias-boorman/">LinkedIn</a> profile for more details.</p>
-			<ul>
-				<li>PST Sensors Europe Limited: Technical Assistant, Aug 2018 - Sep 2018 (8 weeks) </li>
-				<li>Centre for Process Innovation: Business Development Intern, Jul 2017 - Aug 2017 (9 weeks)</li>
-				<li>Centre for Process Innovation: Business Development Intern, Aug 2016 - Sep 2016 (6 weeks) </li>
-				<li>IBEX Innovations: Summer Intern, Jun 2016 (2 weeks)</li>
-			</ul>
-		</section>
-		<br>
+			<div class="secondary">
+				<img src="assets/pfp.bmp" alt="A lovely picture of my face" style="width: 200px; padding: 15px 0 10px 0;">
+				<p>Software Engineer | PhD Theoretical Physics</p>
+				<ul>
+					<li>
+						<i class="fa-brands fa-linkedin"></i> &nbsp; <a href="https://www.linkedin.com/in/tobias-boorman/">LinkedIn</a>
+					</li>
+					
+					<li>
+						<i class="fa-brands fa-google-scholar"></i> &nbsp; <a href="https://scholar.google.com/citations?user=FYsumEwAAAAJ&hl=en&authuser=1&oi=ao">Google Scholar</a>
+					</li>
+					
+					<li>
+						<i class="fa-brands fa-github"></i> &nbsp; <a href="https://github.com/tobiboorman">GitHub</a>
+					</li>
+				</ul>
+			</div>			
+		</div>		
+		
 		<hr>
-		<footer>
+		<footer class="footer">
 			<p> &copy; Tobias Boorman <script>document.write(new Date().getFullYear())</script>
 		</footer>
 	</body>
